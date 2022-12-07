@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --background-base: #2e2e2e;
+  --background-app: #1c1c1c;
+  --background-hover: #353533;
+  /* --background-app: #6d4646; */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+.container {
+  background-color: var(--background-base);
+  min-height: 576px;
+  width: 720px;
+  margin: 0 auto;
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: 1.3fr 2fr;
+  position: relative;
+}
+
+.nav-left {
+}
+.nav-left .account_infor,
+.nav-left .search,
+.nav-left .categories {
+  padding: 0.7rem;
+}
+.nav-left .account_infor {
+  line-height: 0.3;
+  display: flex;
+}
+
+.nav-left .account_infor img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nav-left .account_infor .infor h2 {
+  font-size: 1.3rem;
+}
+.nav-left .account_infor .infor p,
+.nav-left .account_infor .infor span {
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+.nav-left .account_infor .infor span:hover {
+  cursor: pointer;
+}
+
+.nav-left .search input[type="text"] {
+  width: 97%;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  border-bottom: white 2px solid;
+  color: white;
+}
+.nav-left .categories ul,
+.main .wrapper .tasks-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.nav-left .categories ul li {
+  padding: 7px 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+.nav-left .categories ul li .category-info {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left .categories ul li .badges {
+  padding: 1px 7px;
+  background-color: red;
+  font-size: 0.7rem;
+  border-radius: 50%;
+}
+
+.nav-left .categories ul li:hover {
+  background-color: var(--background-hover);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav-left .categories ul li span {
+  margin: 0 20px 0 0;
+}
+.nav-left .add-new-category {
+  position: absolute;
+  bottom: 0;
+}
+
+.nav-left .add-new-category a {
+  display: block;
+  width: 100%;
+  border: none;
+  /* background-color: #04aa6d; */
+  padding: 7px 60px 7px 0.7rem;
+  cursor: pointer;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+}
+.nav-left .add-new-category a span {
+  margin: 0 20px 0 0;
+}
+
+.main {
+  background-color: var(--background-app);
+  border-radius: 7px 0 7px 0;
+}
+
+.main .wrapper {
+  padding: 30px;
+  /* min-height: 100%; */
+}
+.main .wrapper .task-title {
+  display: flex;
+  align-items: center;
+}
+.main .wrapper .task-title h3 {
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+.main .wrapper .tasks-list ul {
+  margin-top: 15px;
+  position: relative;
+  height: 380px;
+  overflow-y: auto;
+}
+
+.main .wrapper .tasks-list ul li {
+  padding: 10px 10px;
+  background-color: var(--background-base);
+  margin-bottom: 2px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+
+.main .wrapper .tasks-list ul li .desc {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.6;
+  font-size: 0.6rem;
+}
+
+#add-new {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 355px;
+  background-color: var(--background-base);
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#add-new span {
+  margin-right: 15px;
+}
+
+#add-new input[type="text"],
+.categories ul li input {
+  background-color: inherit;
+  color: white;
+  border: 0px;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Playing game",
+    "category": "Home",
+    "create_date": "02-Dec-2022",
+    "status": 0
+  },
+  {
+    "name": "Doing home work",
+    "category": "Work",
+    "create_date": "02-Dec-2022",
+    "status": 0
+  },
+  {
+    "name": "Movie dating",
+    "category": "Personal",
+    "create_date": "02-Dec-2022",
+    "status": 0
+  },
+  {
+    "name": "Going to SHV",
+    "category": "Personal",
+    "create_date": "02-Dec-2022",
+    "status": 0
+  }
+]
